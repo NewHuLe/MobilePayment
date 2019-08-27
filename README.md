@@ -15,7 +15,8 @@
 ```
 - DialogFragment弹框导致内存泄漏问题，采取Activity替代DialogFragment  
 ```
- <!--底部弹框动画方案-->
+底部弹框动画方案
+
  <!--进入动画方案-->
   startActivity(intent);
   overridePendingTransition(R.anim.push_bottom_in, R.anim.push_bottom_silent);
@@ -36,3 +37,5 @@
         <item name="android:backgroundDimEnabled">true</item><!-- 半透明 -->
     </style>
 ```
+## 截图
+![](https://github.com/NewHuLe/MobilePayment/blob/master/screenshots/device-2019-08-27-194019.png)
