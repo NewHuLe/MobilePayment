@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mobile Payment</string>
+    <string name="tvClickPayTips">点击支付测试</string>
+
+    <string name="pay_much_tips" translatable="false">支付金额</string>
+    <string name="pay_wechat_pay" translatable="false">微信支付</string>
+    <string name="pay_alipay_tips" translatable="false">支付宝支付</string>
+    <string name="pay_now" translatable="false">立即支付</string>
+    <string name="pay_available" translatable="false">钱包可用余额：%1$s元</string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_close" />
+
+        <LinearLayout
+            android:id="@+id/rgPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_pay_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvPayMoneyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_much_tips"
+                android:textColor="@color/color_text_black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#EEF1F5 " />
+
+            <TextView
+                android:id="@+id/tvPayMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:textColor="@color/color_grey"
+                android:textSize="12sp"
+                tools:text="实付金额50元" />
+
+            <LinearLayout
+                android:id="@+id/llWallet"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+
+                <ImageView
+                    android:id="@+id/ivWallet"
+                    android:layout_width="19dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_wallet" />
+
+                <TextView
+                    android:id="@+id/tvWalletAvailable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/pay_available"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="16sp"
+                    tools:text="钱包可用余额：68.00元" />
+
+                <RadioButton
+                    android:id="@+id/rbWallet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_pay_choose_channel_text"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEF1F5 " />
+
+            <LinearLayout
+                android:id="@+id/llWechatPay"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+
+                <ImageView
+                    android:id="@+id/ivWechat"
+                    android:layout_width="19dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_wechat" />
+
+                <TextView
+                    android:id="@+id/tvWechatAvailable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/pay_wechat_pay"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbWechatPay"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_pay_choose_channel_text"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEF1F5 " />
+
+            <LinearLayout
+                android:id="@+id/llAliPay"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+
+                <ImageView
+                    android:id="@+id/ivAliPay"
+                    android:layout_width="19dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_aliypay" />
+
+                <TextView
+                    android:id="@+id/tvAliPayAvailable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/pay_alipay_tips"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAliPay"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_pay_choose_channel_text"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:text="" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGoPay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/shape_payment_btn"
+                android:gravity="center"
+                android:text="@string/pay_now"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
